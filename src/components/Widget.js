@@ -1,3 +1,4 @@
+import "./Widget.css";
 import usePosts from "../hooks/usePosts";
 
 const Widget = () => {
@@ -15,7 +16,7 @@ const Widget = () => {
     });
 
     return (
-        <div>
+        <div class="Widget">
             <h2>Widget component</h2>
             <ol>
                 {postsJSX}

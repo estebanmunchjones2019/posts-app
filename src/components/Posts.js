@@ -1,3 +1,4 @@
+import "./Posts.css"
 import usePosts from "../hooks/usePosts";
 
 const Posts = () => {
@@ -15,7 +16,7 @@ const Posts = () => {
     });
 
     return (
-        <div>
+        <div class="Posts">
           <h2>Posts component</h2>
           <ul>
             {postsJSX}
