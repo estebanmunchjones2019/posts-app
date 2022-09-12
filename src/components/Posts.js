@@ -16,7 +16,7 @@ const Posts = () => {
     });
 
     return (
-        <div class="Posts">
+        <div className="Posts">
           <h2>Posts component</h2>
           <ul>
             {postsJSX}

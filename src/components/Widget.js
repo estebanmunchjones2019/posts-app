@@ -16,7 +16,7 @@ const Widget = () => {
     });
 
     return (
-        <div class="Widget">
+        <div className="Widget">
             <h2>Widget component</h2>
             <ol>
                 {postsJSX}
