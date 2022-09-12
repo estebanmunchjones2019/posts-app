@@ -1,11 +1,11 @@
 import "./Posts.css"
-import usePosts from "../hooks/usePosts";
+import { useStore } from '../hooks/store';
 
 const Posts = () => {
 
-   const posts = usePosts();
+   const globalState = useStore()[0];
    
-   const postsJSX = posts.slice(0, 9).map(item => {
+   const postsJSX = globalState.posts.slice(0, 9).map(item => {
         return (
             <li>
                 <h3>{item.title}</h3>
@@ -16,7 +16,7 @@ const Posts = () => {
     });
 
     return (
-        <div class="Posts">
+        <div className="Posts">
           <h2>Posts component</h2>
           <ul>
             {postsJSX}

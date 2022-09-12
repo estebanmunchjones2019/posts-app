@@ -1,11 +1,11 @@
 import "./Widget.css";
-import usePosts from "../hooks/usePosts";
+import { useStore } from '../hooks/store';
 
 const Widget = () => {
 
-    const posts = usePosts();
+    const globalState = useStore()[0];
 
-    const postsJSX = posts.slice(9, 11).map(item => {
+    const postsJSX = globalState.posts.slice(9, 11).map(item => {
         return (
             <li>
                 <h3>{item.title}</h3>
@@ -16,7 +16,7 @@ const Widget = () => {
     });
 
     return (
-        <div class="Widget">
+        <div className="Widget">
             <h2>Widget component</h2>
             <ol>
                 {postsJSX}
