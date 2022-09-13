@@ -1,5 +1,3 @@
-// src/hooks/usePosts.js
-
 // import built in React hooks
 import { useEffect, useState } from "react";
 
@@ -14,7 +12,7 @@ const usePosts = () => {
         setPosts(postsArray);
       }
       fetchPosts();
-  }, []);
+  }, [setPosts]);
 
   return posts;
 }
