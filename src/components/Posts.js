@@ -7,10 +7,10 @@ const Posts = () => {
    
    const postsJSX = posts.slice(0, 9).map(item => {
         return (
-            <li>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-            </li>
+          <li>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+          </li>
         );
 
     });
